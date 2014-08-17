@@ -1,0 +1,30 @@
+CONTCORE
+
+- effecten gewoon standaard uit
+- samples via mapstructuur categoriseren
+- automatische sletjes
+- bug: soms is er gewoon geen geluid in het begin, komt door echodelay
+- geen clicks bij stutter: kort infaden
+- geen clicks bij stutter: hoe aan einde uitfaden? wanneer starten?
+- pitch shifter als effect toevoegen
+- effecten zouden per voice moeten voordat voices worden samengevoegd; vooral gain en timedelay
+> timedelay, gain en pitch in poly~ opnemen? dus per afgespeelde sample?
+
+user interface:
+- alles in het nederlands
+- alle kansen in procenten? (nog steeds float)
+- args van randomminmax moeten parameter worden
+- sample duplicaten in lijst (meer van deze)
+- keyboard shortcuts voor meest gebruikte functies: samples removen, duplicaten, metronome on/off
+- voor sommige parameters zoals feedback een dial gebruiken ipv getal
+- min en max voor parameters: kans stutter!
+- een tel in sequencer kunnen selecteren en dan dingen per tel kunnen instellen: gebeurtenissen aan/uit, kans
+
+lange termijn:
+- attractie-effect bij het kiezen van nieuwe waarden van continue parameters
+- meerdere maatsoorten/maatlengtes ondersteunen
+- parameters met constante en veranderlijke waarden
+- bepaalde (reset naar beginwaarde bij nieuwe maat) en onbepaalde parameters
+- orgasme: voorwaarden, stroomversnelling
+- veto: waarden bevriezen voor x fasen
+- misschien parallelle fasen die afwisselen
