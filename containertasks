@@ -1,9 +1,7 @@
 CONTCORE
 
-- effecten gewoon standaard uit
 - samples via mapstructuur categoriseren
 - automatische sletjes
-- bug: soms is er gewoon geen geluid in het begin, komt door echodelay
 - geen clicks bij stutter: kort infaden
 - geen clicks bij stutter: hoe aan einde uitfaden? wanneer starten?
 - pitch shifter als effect toevoegen
