@@ -1,12 +1,15 @@
 CONTCORE
 
+nu:
 - samples via mapstructuur categoriseren
-- automatische sletjes
+- sletjes afmaken
+- automatische sletjes wisselen
+- sampleloader zou ook sletjesfolder moeten tonen: "../martijnsletje/mn1.wav"
+
+effecten:
 - geen clicks bij stutter: kort infaden
 - geen clicks bij stutter: hoe aan einde uitfaden? wanneer starten?
 - pitch shifter als effect toevoegen
-- effecten zouden per voice moeten voordat voices worden samengevoegd; vooral gain en timedelay
-> timedelay, gain en pitch in poly~ opnemen? dus per afgespeelde sample?
 
 user interface:
 - alles in het nederlands
@@ -19,6 +22,8 @@ user interface:
 - een tel in sequencer kunnen selecteren en dan dingen per tel kunnen instellen: gebeurtenissen aan/uit, kans
 
 lange termijn:
+- effecten zouden per voice moeten voordat voices worden samengevoegd; vooral gain en timedelay
+> timedelay, gain en pitch in poly~ opnemen? dus per afgespeelde sample?
 - attractie-effect bij het kiezen van nieuwe waarden van continue parameters
 - meerdere maatsoorten/maatlengtes ondersteunen
 - parameters met constante en veranderlijke waarden
