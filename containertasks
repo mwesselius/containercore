@@ -1,9 +1,11 @@
 CONTCORE
 
 nu:
-- samples via mapstructuur categoriseren
 - sletjes afmaken
+ - groter aandeel niet-muzikale geluiden in martijnsletje, minder samples totaal
 - automatische sletjes wisselen
+ - wissel elke N clusters (instelbaar)
+ - stilte proberen te voorkomen: kleinere sletjes, soms alleen 1 toevoegen
 - sampleloader zou ook sletjesfolder moeten tonen: "../martijnsletje/mn1.wav"
 
 effecten:
