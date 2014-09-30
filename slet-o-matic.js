@@ -50,29 +50,44 @@ function select()
 {
 	if (basepath != "")
 	{
-		// tell sampleloader to clear sample list
-		outlet(0, "clear");
-		currentSelection = new Array();
-		
 		// decide how many sletjes will sound concurrently
 		var amount = randomInt(1, 3);
-		
-		// take sletjes with removal from a copy of the sletjes array; to avoid duplicates
-		var candidates = sletjes.slice();
-		for (var i = 0; i < amount; i++)
-		{
-			var index = randomInt(0, candidates.length);
-			var r = candidates[index];
-			
-			// remove from candidates array
-			candidates.splice(index, 1);
-			currentSelection.push(r);
-			
-			// tell sampleloader to open this sletje
-			outlet(0, r.pathname + "/");
+		post("new amount = " + amount + ", current amount = " + currentSelection.length);post();
+		if (amount <= currentSelection.length)
+		{		
+			// tell sampleloader to clear sample list, then add amount
+			outlet(0, "clear");
+			currentSelection = new Array();
+			addSletjes(amount);
+			post("removed all sletjes and added " + amount);post();
 		}
+		else
+		{
+			// keep current sletjes in sampleloader, but add some
+			var amountToAdd = amount - currentSelection.length;
+			post("keeping current " + currentSelection.length + " sletjes and adding " + amountToAdd);post();
+			addSletjes(amountToAdd);
+		}		
 	}
 }
+
+function addSletjes(amount)
+{
+	// take sletjes with removal from a copy of the sletjes array; to avoid duplicates
+	var candidates = sletjes.slice();
+	for (var i = 0; i < amount; i++)
+	{
+		var index = randomInt(0, candidates.length);
+		var r = candidates[index];
+		
+		// remove from candidates array
+		candidates.splice(index, 1);
+		currentSelection.push(r);
+		
+		// tell sampleloader to open this sletje
+		outlet(0, r.pathname + "/");
+	}
+}	
 
 function randomInt(min, max)
 {
