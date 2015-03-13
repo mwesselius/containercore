@@ -27,20 +27,16 @@ function setbasepath(path)
 	{
 		if (f.filetype == "fold")
 		{
-			//post("found folder named " + f.filename);
-			//post();
+			//println("found folder named " + f.filename);
 			var subfolder = new Folder(f.pathname + f.filename);
 			sletjes.push(subfolder);
 		}
 		f.next();
 	}
-	//post("done");
-	//post();
 	
 	for(var i = 0; i < sletjes.length; i++)
 	{
-		post("sletje " + (i + 1) + ": " + sletjes[i].pathname);
-		post();
+		println("sletje " + (i + 1) + ": " + sletjes[i].pathname);
 	}
 	
 	select();
@@ -52,20 +48,20 @@ function select()
 	{
 		// decide how many sletjes will sound concurrently
 		var amount = randomInt(1, 3);
-		post("new amount = " + amount + ", current amount = " + currentSelection.length);post();
+		println("van " + currentSelection.length + " naar " + amount + " sletjes...");
 		if (amount <= currentSelection.length)
 		{		
 			// tell sampleloader to clear sample list, then add amount
 			outlet(0, "clear");
 			currentSelection = new Array();
 			addSletjes(amount);
-			post("removed all sletjes and added " + amount);post();
+			println("alle sletjes weggehaald en " + amount + " toegevoegd.");
 		}
 		else
 		{
 			// keep current sletjes in sampleloader, but add some
 			var amountToAdd = amount - currentSelection.length;
-			post("keeping current " + currentSelection.length + " sletjes and adding " + amountToAdd);post();
+			println(amountToAdd + " sletjes toegevoegd aan huidige " + currentSelection.length + ".");
 			addSletjes(amountToAdd);
 		}		
 	}
@@ -92,4 +88,9 @@ function addSletjes(amount)
 function randomInt(min, max)
 {
 	return Math.floor(Math.random() * max) + min;
+}
+
+function println(s)
+{
+	post("slet-o-matic: " + s + "\n");
 }

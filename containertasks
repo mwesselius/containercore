@@ -1,8 +1,10 @@
 CONTCORE
 
 nu:
+- crash als je clusterlengte aanpast terwijl ie loopt
 - slet-o-matic
- > standaard aan; slettenbak instellen moet niet door die gate
+ > standaard aan
+ > slettenbak instellen moet niet door die gate
  > sletjeswisseling moet geleidelijker; losse sletjes vervangen, niet alles tegelijk vervangen; 1 erbij of 1 eraf of 1 verwisselen
  - stilte proberen te voorkomen: kleinere sletjes, soms alleen 1 toevoegen, of label in de coll van de sampleloader toestaan (let op effect op andere applicaties die sampleloader gebruiken)
 - tempo moet ook een parameter zijn die vanzelf verandert (een gele); tussen twee grenzen bv. 60 en 120
