@@ -1,12 +1,14 @@
 CONTCORE
 
 nu:
-- sletjes afmaken
- - groter aandeel niet-muzikale geluiden in martijnsletje, minder samples totaal
-- automatische sletjes wisselen
- - wissel elke N clusters (instelbaar)
- - stilte proberen te voorkomen: kleinere sletjes, soms alleen 1 toevoegen
+- slet-o-matic
+ > standaard aan; slettenbak instellen moet niet door die gate
+ > sletjeswisseling moet geleidelijker; losse sletjes vervangen, niet alles tegelijk vervangen; 1 erbij of 1 eraf of 1 verwisselen
+ - stilte proberen te voorkomen: kleinere sletjes, soms alleen 1 toevoegen, of label in de coll van de sampleloader toestaan (let op effect op andere applicaties die sampleloader gebruiken)
+- tempo moet ook een parameter zijn die vanzelf verandert (een gele); tussen twee grenzen bv. 60 en 120
 - sampleloader zou ook sletjesfolder moeten tonen: "../martijnsletje/mn1.wav"
+- iets met stilte / pauze creeeren
+ - wachten tot het geluid van de laatste sample is uitgedoofd, elkaar laten uitpraten
 
 effecten:
 - geen clicks bij stutter: kort infaden
