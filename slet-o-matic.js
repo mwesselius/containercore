@@ -46,44 +46,125 @@ function select()
 {
 	if (basepath != "")
 	{
-		// decide how many sletjes will sound concurrently
-		var amount = randomInt(1, 3);
-		println("van " + currentSelection.length + " naar " + amount + " sletjes...");
-		if (amount <= currentSelection.length)
-		{		
-			// tell sampleloader to clear sample list, then add amount
-			outlet(0, "clear");
-			currentSelection = new Array();
-			addSletjes(amount);
-			println("alle sletjes weggehaald en " + amount + " toegevoegd.");
+		// decide whether to add one, remove one, or replace one
+		var currAmount = currentSelection.length;
+		if (currAmount == 0)
+		{
+			// add
+			addOneSletje();
+		}
+		else if (currAmount >= 3)
+		{
+			// remove or replace
+			var r = Math.random();
+			if (r < 0.5)
+			{
+				removeOneSletje();
+			}
+			else
+			{
+				replaceOneSletje();
+			}
+		}
+		else if (currAmount == 1)
+		{
+			// add or replace
+			var r = Math.random();
+			if (r < 0.5)
+			{
+				addOneSletje();
+			}
+			else
+			{
+				replaceOneSletje();
+			}
 		}
 		else
 		{
-			// keep current sletjes in sampleloader, but add some
-			var amountToAdd = amount - currentSelection.length;
-			println(amountToAdd + " sletjes toegevoegd aan huidige " + currentSelection.length + ".");
-			addSletjes(amountToAdd);
-		}		
+			// add, remove, or replace
+			var r = Math.random();
+			if (r < 0.333)
+			{
+				addOneSletje();
+			}
+			else if (r < 0.667)
+			{
+				removeOneSletje();
+			}
+			else
+			{
+				replaceOneSletje();
+			}
+		}
 	}
 }
 
-function addSletjes(amount)
+function addOneSletje()
 {
-	// take sletjes with removal from a copy of the sletjes array; to avoid duplicates
-	var candidates = sletjes.slice();
-	for (var i = 0; i < amount; i++)
+	// keep current sletjes in sampleloader and add one
+	var newLength = currentSelection.length + 1;
+	println("1 sletje toegevoegd aan huidige " + currentSelection.length + ", nu " + newLength);
+	var newSletje = getSletje();
+	currentSelection.push(newSletje);
+	outlet(0, newSletje.pathname + "/");
+}
+
+function removeOneSletje()
+{
+	// decide which sletje to remove
+	var index = randomInt(0, currentSelection.length);
+	currentSelection.splice(index, 1);	
+	refreshSampleloader();
+	println("1 sletje weggehaald, nu " + currentSelection.length);
+}
+
+function replaceOneSletje()
+{	
+	// decide which sletje to replace and which one to replace it with
+	var index = randomInt(0, currentSelection.length);
+	var newSletje = getSletje();
+	currentSelection[index] = newSletje;
+	refreshSampleloader();
+	println("1 sletje vervangen, nog steeds " + currentSelection.length);
+}
+
+function getSletje()
+{
+	// returns a random sletje from the slettenbak 
+	// which is not present in the current selection
+	if (currentSelection.length == 0)
 	{
-		var index = randomInt(0, candidates.length);
-		var r = candidates[index];
-		
-		// remove from candidates array
-		candidates.splice(index, 1);
-		currentSelection.push(r);
-		
-		// tell sampleloader to open this sletje
-		outlet(0, r.pathname + "/");
+		var index = randomInt(0, sletjes.length);
+		return sletjes[index];
 	}
-}	
+	else
+	{
+		var i = 0;
+		var index = 0;
+		var candidate = currentSelection[0];
+		while (i < 100 && currentSelection.indexOf(candidate) != -1)
+		{
+			i++;
+			index = randomInt(0, sletjes.length);
+			candidate = sletjes[index];
+			println("i = " + i + ", index = " + index);
+		}
+	}
+	
+	return candidate;
+}
+
+function refreshSampleloader()
+{
+	// tell sampleloader to clear sample list
+	outlet(0, "clear");
+	
+	// tell sampleloader to load all sletjes in the current selection
+	for (var i = 0; i < currentSelection.length; i++)
+	{
+		outlet(0, currentSelection[i].pathname + "/");
+	}
+}
 
 function randomInt(min, max)
 {
