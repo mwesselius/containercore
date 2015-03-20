@@ -15,6 +15,9 @@ var currentSelection = new Array();
 // folder location of which the sletjes are subfolders
 var basepath = "";
 
+var minimumAmount = 1;
+var maximumAmount = 5;
+
 // initializes the script with a base path to find all sletjes
 function setbasepath(path)
 {
@@ -50,12 +53,12 @@ function select()
 		var currAmount = currentSelection.length;
 		if (currAmount == 0)
 		{
-			// add
+			// empty; need to add one (first call to select)
 			addOneSletje();
 		}
-		else if (currAmount >= 3)
+		else if (currAmount >= maximumAmount)
 		{
-			// remove or replace
+			// reached maximum; remove or replace
 			var r = Math.random();
 			if (r < 0.5)
 			{
@@ -66,11 +69,11 @@ function select()
 				replaceOneSletje();
 			}
 		}
-		else if (currAmount == 1)
+		else if (currAmount <= minimumAmount)
 		{
-			// add or replace
+			// reached minimum; add or replace
 			var r = Math.random();
-			if (r < 0.5)
+			if (r < 0.75)
 			{
 				addOneSletje();
 			}
@@ -147,7 +150,7 @@ function getSletje()
 			i++;
 			index = randomInt(0, sletjes.length);
 			candidate = sletjes[index];
-			println("i = " + i + ", index = " + index);
+			//println("i = " + i + ", index = " + index);
 		}
 	}
 	
