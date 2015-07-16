@@ -1,4 +1,4 @@
-// inlet 1: setbasepath
+// inlet 1: setbasepath, minimum, maximum
 inlets = 1;
 
 // outlet 1: messages to sampleloader
@@ -16,7 +16,23 @@ var currentSelection = new Array();
 var basepath = "";
 
 var minimumAmount = 1;
-var maximumAmount = 5;
+var maximumAmount = 4;
+
+function minimum(m)
+{
+	// minimum cannot be larger than maximum, cannot be smaller than 1
+	var clamped = Math.max(1, Math.min(m, maximumAmount));
+	minimumAmount = clamped;
+	println("minimum set to " + clamped);
+}
+
+function maximum(m)
+{
+	// maximum cannot be smaller than minimum
+	var clamped = Math.max(minimumAmount, m);
+	maximumAmount = clamped;
+	println("maximum set to " + clamped);
+}
 
 // initializes the script with a base path to find all sletjes
 function setbasepath(path)

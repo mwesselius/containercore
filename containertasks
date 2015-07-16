@@ -2,9 +2,14 @@ CONTCORE
 
 nu:
 - sletjes:
- - qua aantal meer gelijktrekken (teveel koto en langspeel en piano bijvoorbeeld)
- - sletjes/samples toevoegen
+ - haatslet: meer samples (er zijn genoeg AK47 samples)
+ - insectenslet: nieuwe geluiden voor meer contrast, tonale geluiden misschien?
+ - langspeelslet: Samples te hard, te weinig variatie; nieuwe samples: volume verloop samples (bijvoorbeeld bewerken huidige samples), samples met meer textuur
+ > martijnslet: aantal weer omlaag brengen
+ - oerwoudslet: te grappig; we willen "dieren" erbij? complexere geluiden, langer of grover, meer textuur
+ - spaceslet: meer synthesizer-achtige geluiden > radio/ruis geluiden; hoe werkt lassen hierbij?
 - crash als je clusterlengte aanpast terwijl ie loopt
+- crash als je in slet-o-matic 'maak nieuwe selectie' klikt terwijl ie nog bezig is
 - crash zomaar (terry)
 - slet-o-matic
  - sletjes blijven nu te lang hangen; aantal naar 4? vaker wisselen?
