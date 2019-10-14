@@ -12,11 +12,13 @@ nu:
 - crash als je in slet-o-matic 'maak nieuwe selectie' klikt terwijl ie nog bezig is
 - crash zomaar (terry)
 - slet-o-matic
- - sletjes blijven nu te lang hangen; aantal naar 4? vaker wisselen?
+ - sletjes blijven nu te lang hangen; spelen met min/max aantal? vaker wisselen?
  - soms twee selecties direct na elkaar?
  - wissel-stilte proberen te voorkomen: kleinere sletjes, of label in de coll van de sampleloader toestaan (let op effect op andere applicaties die sampleloader gebruiken)
+ - verbeter interface (on/off disabled als geen slettenlocatie)
 - tempo moet ook een parameter zijn die vanzelf verandert (een gele); tussen twee grenzen bv. 60 en 120
 - sampleloader zou ook sletjesfolder moeten tonen: "../martijnsletje/mn1.wav"
+- matrixctrl is misschien beter dan beatleds, ook aan/uit, misschien makkelijker aantal te veranderen
 - iets met stilte / pauze creeeren
  - wachten tot het geluid van de laatste sample is uitgedoofd, elkaar laten uitpraten
 
