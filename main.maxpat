@@ -285,7 +285,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 60.0, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 555.0, 36.0, 20.0 ],
+					"presentation_rect" : [ 29.0, 540.0, 36.0, 20.0 ],
 					"text" : "v 1.1"
 				}
 
@@ -896,7 +896,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 660.0, 30.0, 176.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 524.5, 130.0, 24.0 ],
+					"presentation_rect" : [ 29.0, 509.5, 130.0, 24.0 ],
 					"text" : "ContainerCore"
 				}
 
@@ -1441,7 +1441,7 @@
 					"outlettype" : [ "int", "int", "int", "int" ],
 					"patching_rect" : [ 270.0, 420.0, 105.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.0, 405.0, 364.0, 274.0 ],
+					"presentation_rect" : [ 349.0, 420.0, 495.0, 255.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1463,7 +1463,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 30.0, 345.0, 174.0, 97.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.0, 207.5, 434.0, 132.5 ],
+					"presentation_rect" : [ 345.0, 207.5, 495.0, 132.5 ],
 					"viewvisibility" : 1
 				}
 
@@ -1526,7 +1526,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 630.0, 150.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 390.0, 300.0, 105.0 ],
+					"presentation_rect" : [ 15.0, 390.0, 300.0, 90.0 ],
 					"rounded" : 0
 				}
 
@@ -1562,7 +1562,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 720.0, 150.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 180.0, 465.0, 165.0 ],
+					"presentation_rect" : [ 330.0, 180.0, 525.0, 165.0 ],
 					"rounded" : 0
 				}
 
@@ -1580,7 +1580,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 765.0, 150.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 360.0, 390.0, 330.0 ],
+					"presentation_rect" : [ 330.0, 360.0, 525.0, 330.0 ],
 					"rounded" : 0
 				}
 
@@ -1598,7 +1598,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 810.0, 150.0, 30.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 510.0, 300.0, 180.0 ],
+					"presentation_rect" : [ 15.0, 494.0, 300.0, 196.0 ],
 					"rounded" : 0
 				}
 
