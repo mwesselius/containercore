@@ -76,7 +76,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 419.0, 79.0, 66.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 67.0, 103.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 89.0, 103.0, 20.0 ],
 					"text" : "maximaal tegelijk"
 				}
 
@@ -92,7 +92,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 300.0, 79.0, 60.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 45.0, 98.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 64.0, 98.0, 20.0 ],
 					"text" : "minimaal tegelijk"
 				}
 
@@ -111,7 +111,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 375.0, 90.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.0, 67.0, 30.0, 22.0 ]
+					"presentation_rect" : [ 105.0, 89.0, 30.0, 22.0 ]
 				}
 
 			}
@@ -143,7 +143,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 255.0, 90.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.0, 45.0, 30.0, 22.0 ]
+					"presentation_rect" : [ 105.0, 64.0, 30.0, 22.0 ]
 				}
 
 			}
@@ -177,7 +177,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 570.0, 240.0, 13.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.0, 90.0, 13.0, 22.0 ],
+					"presentation_rect" : [ 128.0, 120.0, 13.0, 22.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -214,7 +214,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 570.0, 195.0, 153.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 90.0, 125.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 120.0, 125.0, 22.0 ],
 					"text" : "maak nieuwe selectie",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -230,7 +230,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 150.0, 55.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 65.0, 60.0, 55.0, 20.0 ],
+					"presentation_rect" : [ 223.0, 121.0, 50.0, 20.0 ],
 					"text" : "clusters"
 				}
 
@@ -245,7 +245,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 135.0, 35.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 60.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 158.0, 121.0, 34.0, 20.0 ],
 					"text" : "elke "
 				}
 
@@ -260,7 +260,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 240.0, 48.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 30.0, 48.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 38.0, 48.0, 20.0 ],
 					"text" : "aan/uit:"
 				}
 
@@ -275,7 +275,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 90.0, 240.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 52.0, 30.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 52.0, 38.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -361,7 +361,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 570.0, 105.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.0, 60.0, 30.0, 22.0 ]
+					"presentation_rect" : [ 190.0, 121.0, 30.0, 22.0 ]
 				}
 
 			}
@@ -428,7 +428,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -742,7 +742,37 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "slet-o-matic.js",
+				"bootpath" : "~/Maxpatches/containercore/containersource",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clustertransition.maxpat",
+				"bootpath" : "~/Maxpatches/containercore/containersource",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "barpos.maxpat",
+				"bootpath" : "~/Maxpatches/containercore/containersource",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exclamationwidget.maxpat",
+				"bootpath" : "~/Maxpatches/common_abstractions/bpatcher",
+				"patcherrelativepath" : "../../../common_abstractions/bpatcher",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
