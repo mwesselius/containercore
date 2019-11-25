@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 562.0, 1329.0, 496.0 ],
+		"rect" : [ 127.0, 528.0, 1329.0, 496.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,61 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-35",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1020.0, 403.0, 188.0, 47.0 ],
+					"presentation_linecount" : 4,
+					"text" : "deze gaat dus met een bepaalde kans aan en met een bepaalde kans uit, niet gekoppeld aan ticks"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-32",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 763.0, 403.0, 151.0, 47.0 ],
+					"presentation_linecount" : 3,
+					"text" : "deze gaat dus met dezelfde kans aan/uit, niet gekoppeld aan ticks"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-30",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 505.0, 336.0, 179.0, 114.0 ],
+					"presentation_linecount" : 10,
+					"text" : "deze is dus gekoppeld aan ticks, op dezelfde manier als triggersamples, plus randomize all bij clusterovergang, en is daardoor ingewikkelder. 'dichtheid' is ook gewoon de 'aan-kans', 3 verschillende kansen, ingewikkeld."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-23",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 44.0, 403.0, 150.0, 47.0 ],
+					"text" : "deze gaat dus met dezelfde kans aan/uit, niet gekoppeld aan ticks"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "live.line",
@@ -285,18 +340,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1020.0, 180.0, 32.5, 22.0 ],
 					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 414.0, 159.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -1479,16 +1522,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"order" : 0,
-					"source" : [ "obj-68", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
-					"order" : 1,
 					"source" : [ "obj-68", 0 ]
 				}
 
