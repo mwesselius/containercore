@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 335.0, 357.0, 600.0, 630.0 ],
+		"rect" : [ 561.0, 436.0, 600.0, 630.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -359,7 +359,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 210.0, 495.0, 60.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 105.0, 60.0, 20.0 ],
+					"presentation_rect" : [ 60.0, 60.0, 60.0, 20.0 ],
 					"text" : "polyfonie"
 				}
 
@@ -378,7 +378,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 150.0, 495.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 105.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 0.0, 60.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -392,7 +392,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 225.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 45.0, 39.0, 20.0 ],
+					"presentation_rect" : [ 180.0, 0.0, 39.0, 20.0 ],
 					"text" : "auto"
 				}
 
@@ -407,7 +407,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 225.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.0, 45.0, 39.0, 20.0 ],
+					"presentation_rect" : [ 240.0, 0.0, 39.0, 20.0 ],
 					"text" : "kans:"
 				}
 
@@ -456,7 +456,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 315.0, 225.0, 13.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 75.0, 13.0, 22.0 ],
+					"presentation_rect" : [ 90.0, 30.0, 13.0, 22.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -477,7 +477,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 510.0, 285.0, 13.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 45.0, 13.0, 22.0 ],
+					"presentation_rect" : [ 150.0, 0.0, 13.0, 22.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -492,7 +492,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 120.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.0, 75.0, 39.0, 20.0 ],
+					"presentation_rect" : [ 240.0, 30.0, 39.0, 20.0 ],
 					"text" : "kans:"
 				}
 
@@ -507,7 +507,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 300.0, 60.0, 124.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 135.0, 75.0, 97.0, 20.0 ],
+					"presentation_rect" : [ 135.0, 30.0, 97.0, 20.0 ],
 					"text" : "bij nieuw cluster."
 				}
 
@@ -552,7 +552,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 360.0, 225.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 45.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 210.0, 0.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -581,7 +581,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 480.0, 59.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 0.0, 132.0, 20.0 ],
+					"presentation_rect" : [ 303.0, 60.0, 132.0, 20.0 ],
 					"text" : "huidige sample-index:"
 				}
 
@@ -604,7 +604,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 360.0, 285.0, 147.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 45.0, 146.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 146.0, 22.0 ],
 					"prototypename" : "parameter_message",
 					"text" : "randomize one at random",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -626,7 +626,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 405.0, 225.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 45.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 285.0, 0.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -660,7 +660,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 345.0, 120.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 75.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 285.0, 30.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -788,7 +788,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.0, 480.0, 30.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 405.0, 0.0, 28.0, 22.0 ],
+					"presentation_rect" : [ 438.0, 60.0, 28.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -811,7 +811,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.0, 225.0, 82.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.0, 81.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 30.0, 81.0, 22.0 ],
 					"prototypename" : "parameter_message",
 					"text" : "randomize all",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
