@@ -473,7 +473,7 @@
 					"patching_rect" : [ 795.0, 60.0, 40.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 29.0, 540.0, 36.0, 20.0 ],
-					"text" : "v 1.1"
+					"text" : "v 2.0"
 				}
 
 			}
