@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 50.0, 871.0, 708.0 ],
+		"rect" : [ 53.0, 49.0, 871.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,193 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"delay" : 1,
+					"hint" : "Aan elke tick in de maat wordt een sample uit de sampleloader gekoppeld.\nAls auto aanstaat, is er elke tick een instelbare kans dat er een nieuwe sample aan een tick wordt gekoppeld.\nBij een clusterovergang is er een instelbare kans dat alle koppelingen vernieuwd worden.\nPolyfonie is het aantal samples dat je maximaal tegelijk kan horen. Hoe lager dit getal, hoe vaker een geluid zal worden afgekapt door een volgend geluid.",
+					"id" : "obj-52",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 720.0, 195.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 810.0, 195.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgcolor2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"gradient" : 1,
+					"hint" : "triggersamples",
+					"id" : "obj-53",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 720.0, 240.0, 26.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 812.0, 197.0, 26.0, 26.0 ],
+					"text" : "?",
+					"textcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"delay" : 1,
+					"hint" : "Laat zien welke ticks in de maat een geluid produceren (aan staan).\nAls auto aan staat, dan is er elke tick een bepaalde, instelbare kans dat een tick van aan naar uit omschakelt of vice versa.\n(Welk geluid er bij welke tick hoort, daar heeft de sequencer niets mee te maken.)",
+					"id" : "obj-45",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.0, 195.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 810.0, 30.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgcolor2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"gradient" : 1,
+					"id" : "obj-46",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 675.0, 240.0, 26.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 812.0, 32.0, 26.0, 26.0 ],
+					"text" : "?",
+					"textcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"delay" : 1,
+					"hint" : "Normaal gesproken komt elke maat afwisselend uit de linker- en rechterspeaker. Als je dit uitzet, dan komt al het geluid uit beide speakers.",
+					"id" : "obj-42",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 630.0, 195.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 270.0, 405.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgcolor2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"gradient" : 1,
+					"id" : "obj-43",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 630.0, 240.0, 26.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 407.0, 26.0, 26.0 ],
+					"text" : "?",
+					"textcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"delay" : 1,
+					"hint" : "Als de slet-o-matic aan staat, laadt ie sletjes in de sampleloader en verwisselt ze automatisch elke x clusters (dit is instelbaar).\nAls het uit staat, kan je zelf kiezen welke samples je gebruikt.\nHet minimum en maximum aantal sletjes is ook in te stellen.",
+					"id" : "obj-6",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 585.0, 195.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 270.0, 30.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgcolor2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"gradient" : 1,
+					"id" : "obj-31",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 585.0, 240.0, 26.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 32.0, 26.0, 26.0 ],
+					"text" : "?",
+					"textcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"delay" : 1,
+					"hint" : "Elke maat bestaat uit 16 ticks.\nDe sequencer geeft de huidige maat weer.\nEen cluster bestaat uit x maten (dit is instelbaar).\nBij clusterovergangen is er extra kans op grote veranderingen.",
+					"id" : "obj-7",
+					"maxclass" : "hint",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 540.0, 195.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 270.0, 225.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "meter~",
@@ -676,7 +863,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 375.0, 75.0, 33.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.0, 315.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 120.0, 313.0, 34.0, 20.0 ],
 					"text" : "bars"
 				}
 
@@ -693,7 +880,7 @@
 					"patching_rect" : [ 330.0, 60.0, 47.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 30.0, 302.0, 47.0, 33.0 ],
+					"presentation_rect" : [ 30.0, 300.0, 47.0, 33.0 ],
 					"text" : "cluster length:"
 				}
 
@@ -708,7 +895,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 90.0, 39.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 234.0, 225.0, 38.0, 18.0 ],
+					"presentation_rect" : [ 234.0, 305.0, 38.0, 18.0 ],
 					"text" : "cluster"
 				}
 
@@ -726,7 +913,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 510.0, 60.0, 30.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 226.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 270.0, 306.0, 29.0, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -772,7 +959,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 285.0, 60.0, 39.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 315.0, 39.0, 22.0 ]
+					"presentation_rect" : [ 75.0, 313.0, 39.0, 22.0 ]
 				}
 
 			}
@@ -801,7 +988,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 480.0, 90.0, 33.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 248.0, 260.0, 23.0, 18.0 ],
+					"presentation_rect" : [ 248.0, 340.0, 23.0, 18.0 ],
 					"text" : "tick"
 				}
 
@@ -816,7 +1003,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 450.0, 90.0, 35.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 248.0, 243.0, 24.0, 18.0 ],
+					"presentation_rect" : [ 248.0, 323.0, 24.0, 18.0 ],
 					"text" : "bar"
 				}
 
@@ -834,7 +1021,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 480.0, 60.0, 30.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 260.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 270.0, 340.0, 29.0, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -852,7 +1039,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 450.0, 60.0, 30.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 243.0, 29.0, 20.0 ],
+					"presentation_rect" : [ 270.0, 323.0, 29.0, 20.0 ],
 					"triangle" : 0
 				}
 
@@ -927,7 +1114,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 195.0, 60.0, 33.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.0, 285.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 125.0, 283.0, 34.0, 20.0 ],
 					"text" : "bpm"
 				}
 
@@ -942,7 +1129,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 105.0, 60.0, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 285.0, 46.0, 20.0 ],
+					"presentation_rect" : [ 30.0, 283.0, 46.0, 20.0 ],
 					"text" : "tempo:"
 				}
 
@@ -965,25 +1152,17 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.92549, 0.92549, 0.92549, 1.0 ],
-					"bgfillcolor_autogradient" : 0.79,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1 ],
-					"bgfillcolor_color1" : [ 0.92549, 0.92549, 0.92549, 1.0 ],
-					"bgfillcolor_color2" : [ 0.368627, 0.368627, 0.368627, 1.0 ],
-					"bgfillcolor_type" : "gradient",
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"gradient" : 0,
 					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 60.0, 37.0, 22.0 ],
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 225.0, 60.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 345.0, 37.0, 22.0 ],
-					"text" : "reset",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"presentation_rect" : [ 75.0, 340.0, 84.0, 20.0 ],
+					"text" : "Reset",
+					"texton" : "Reset"
 				}
 
 			}
@@ -1030,7 +1209,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 150.0, 60.0, 50.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 285.0, 50.0, 21.0 ]
+					"presentation_rect" : [ 75.0, 283.0, 50.0, 21.0 ]
 				}
 
 			}
@@ -1501,24 +1680,6 @@
 					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
-					"id" : "obj-16",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 675.0, 150.0, 30.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 210.0, 300.0, 165.0 ],
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -1617,6 +1778,53 @@
 					"patching_rect" : [ 585.0, 150.0, 30.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 300.0, 180.0 ],
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgcolor2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color1" : [ 0.866666666666667, 0.866666666666667, 0.866666666666667, 1.0 ],
+					"bgfillcolor_color2" : [ 0.717647058823529, 0.717647058823529, 0.717647058823529, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"gradient" : 1,
+					"id" : "obj-40",
+					"ignoreclick" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 540.0, 240.0, 26.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 272.0, 227.0, 26.0, 26.0 ],
+					"text" : "?",
+					"textcolor" : [ 0.43921568627451, 0.43921568627451, 0.43921568627451, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 0.0,
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 0.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.415686, 0.454902, 0.52549, 1.0 ],
+					"id" : "obj-16",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.0, 150.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 210.0, 300.0, 165.0 ],
 					"rounded" : 0
 				}
 
@@ -1856,7 +2064,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"midpoints" : [ 39.5, 293.0, 279.5, 293.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -1864,7 +2072,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-61", 0 ]
 				}
 
