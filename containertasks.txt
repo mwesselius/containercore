@@ -9,9 +9,10 @@ nu:
  - oerwoudslet: te grappig; we willen "dieren" erbij? complexere geluiden, langer of grover, meer textuur
  - spaceslet: meer synthesizer-achtige geluiden > radio/ruis geluiden; hoe werkt lassen hierbij?
 - crash als je clusterlengte aanpast terwijl ie loopt
-- crash als je in slet-o-matic 'maak nieuwe selectie' klikt terwijl ie nog bezig is
-- crash zomaar (terry)
 - slet-o-matic
+ - als aan/uit-checkbox uit staat, blijft ie intern vrolijk doorlopen en ook output in het max window zetten
+ - crasht zeer regelmatig als slet-o-matic aan staat
+ - crash als je in slet-o-matic 'maak nieuwe selectie' klikt terwijl ie nog bezig is
  - sletjes blijven nu te lang hangen; spelen met min/max aantal? vaker wisselen?
  - soms twee selecties direct na elkaar?
  - wissel-stilte proberen te voorkomen: kleinere sletjes, of label in de coll van de sampleloader toestaan (let op effect op andere applicaties die sampleloader gebruiken)
@@ -38,8 +39,6 @@ user interface:
 - een tel in sequencer kunnen selecteren en dan dingen per tel kunnen instellen: gebeurtenissen aan/uit, kans
 
 lange termijn:
-- effecten zouden per voice moeten voordat voices worden samengevoegd; vooral gain en timedelay
-> timedelay, gain en pitch in poly~ opnemen? dus per afgespeelde sample?
 - attractie-effect bij het kiezen van nieuwe waarden van continue parameters
 - meerdere maatsoorten/maatlengtes ondersteunen
 - parameters met constante en veranderlijke waarden
